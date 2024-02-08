@@ -1,0 +1,6 @@
+<h1>Payment Results</h1>
+<p>APR: <%= number_with_precision(@apr, precision: 4) %>%</p>
+<p>Number of Years: <%= @years %></p>
+<p>Principal: <%= number_to_currency(@pv, precision: 0) %></p>
+<p>Monthly Payment: <%= number_to_currency(@result, precision: 2) %></p>
+<%= link_to "Calculate another payment", "/payment/new" %>
